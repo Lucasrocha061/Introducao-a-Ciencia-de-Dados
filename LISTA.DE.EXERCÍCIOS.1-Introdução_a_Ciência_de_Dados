@@ -1,0 +1,505 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lucasrocha061/Introducao-a-Ciencia-de-Dados/blob/main/LISTA.DE.EXERC%C3%8DCIOS.1-Introdu%C3%A7%C3%A3o_a_Ci%C3%AAncia_de_Dados\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***\n",
+        "## **<center>Lista de Exercícios 1 - Python Express</center>**\n",
+        "\n",
+        "\n",
+        "**<center>Introdução a Ciência de Dados</center>**\n",
+        "***\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "Segue uma lista de exercícios abordando o conteúdo inicial para a programação em Python.\n",
+        "\n",
+        "Cada exercício deve ser respondido em uma célula específica.\n",
+        "\n",
+        "\n",
+        "1) Elabore um código que imprima a mensagem *\"Olá terráqueos!!\"* na tela.\n",
+        "\n",
+        "\n",
+        "2) Elabore um código que peça um número e então mostre a mensagem: *\"O número informado foi [número].\"*\n",
+        "\n",
+        "\n",
+        "3) Elabore um código que peça dois números e imprima a soma.\n",
+        "\n",
+        "\n",
+        "4) Elabore um código que peça as 4 notas bimestrais e mostre a média.\n",
+        "\n",
+        "5) Elabore um código que converta metros para centímetros.\n",
+        "\n",
+        "\n",
+        "6) Elabore um código que peça o raio de um círculo, calcule e mostre sua área.\n",
+        "\n",
+        "7) Elabore um código que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.\n",
+        "\n",
+        "\n",
+        "8) Elabore um código que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês em uma mensagem amigável.\n",
+        "\n",
+        "\n",
+        "9) Elabore um código que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.\n",
+        "** Onde C = 5 * ((F-32) / 9)**.\n",
+        "\n",
+        "\n",
+        "10) Elabore um código que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.\n",
+        "\n",
+        "\n",
+        "11) Elabore um código que peça 2 números inteiros e um número real. Calcule e mostre:\n",
+        "* o produto do dobro do primeiro com metade do segundo .\n",
+        "* a soma do triplo do primeiro com o terceiro.\n",
+        "* o terceiro elevado ao cubo.\n",
+        "\n",
+        "12) Elabore um código que receba os dados de entrada a altura de uma pessoa, e informe qual seria o peso ideal, usando a seguinte fórmula: (72.7*altura) - 58"
+      ],
+      "metadata": {
+        "id": "mjOWECpRg_o_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "X7CoGaBLg-uZ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3ce87ebd-6d03-49a2-9a71-a90d323b20af"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, terráqueos!!\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1) Elabore um código que imprima a mensagem *\"Olá terráqueos!!\"* na tela.\n",
+        "\n",
+        "print(\"Olá, terráqueos!!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2) Elabore um código que peça um número e então mostre a mensagem: \"O número informado foi [número].\"\n",
+        "num = input(\"Digite um número: \")\n",
+        "print(f\"O número informado foi {num}.\")"
+      ],
+      "metadata": {
+        "id": "vSspwFSlUOSI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ba0fcbe0-b326-4ee5-ca4e-e8d62b215482"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 10\n",
+            "O número informado foi 10.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3) Elabore um código que peça dois números e imprima a soma.\n",
+        "num1 = int(input(\"Digite um número: \"))\n",
+        "num2 = int(input(\"Digite outro número: \"))\n",
+        "soma = num1 + num2\n",
+        "print(f\"A soma dos números é {soma}.\")"
+      ],
+      "metadata": {
+        "id": "kntDA0RLUO7A",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a12b9691-f6d8-48b8-b40a-80f78ee4d996"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 10\n",
+            "Digite outro número: 10\n",
+            "A soma dos números é 20.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4) Elabore um código que peça as 4 notas bimestrais e mostre a média.\n",
+        "nota1 = float(input(\"Digite a primeira nota: \"))\n",
+        "nota2 = float(input(\"Digite a segunda nota: \"))\n",
+        "nota3 = float(input(\"Digite a terceira nota: \"))\n",
+        "nota4 = float(input(\"Digite a quarta nota: \"))\n",
+        "media = (nota1 + nota2 + nota3 + nota4) / 4\n",
+        "print(f\"\\nA média das notas é {media:.1f}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x8BJoSuRT-KK",
+        "outputId": "e656dd16-a717-4797-af4a-daf1b821ba38"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira nota: 10\n",
+            "Digite a segunda nota: 10\n",
+            "Digite a terceira nota: 10\n",
+            "Digite a quarta nota: 10\n",
+            "\n",
+            "A média das notas é 10.0.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5) Elabore um código que converta metros para centímetros.\n",
+        "metros = float(input(\"Digite um valor em metros: \"))\n",
+        "centimetros = metros * 100\n",
+        "print(f\"{metros} metros equivale a {centimetros:.2f} centímetros.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xd2cyda_T-M4",
+        "outputId": "befa6b73-5262-4901-ab34-f4eb690928c9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um valor em metros: 155\n",
+            "155.0 metros equivale a 15500.0 centímetros.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 6) Elabore um código que peça o raio de um círculo, calcule e mostre sua área.\n",
+        "raio = float(input(\"Digite o raio do círculo: \"))\n",
+        "area = 3.14 * (raio ** 2)\n",
+        "print(f\"A área do círculo é {area:.2f}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kjLkjc_5T-Pp",
+        "outputId": "3aeb3efd-bdec-4a02-e838-9db1a7c6617f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o raio do círculo: 10\n",
+            "A área do círculo é 314.00.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 7) Elabore um código que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.\n",
+        "lado = float(input(\"Digite o valor do lado do quadrado em metros: \"))\n",
+        "area = lado * lado\n",
+        "print(f'\\nO valor da área é: {area:.2f} m')\n",
+        "print(f'O dobro da área é: {area * 2:.2f} m')\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6XGEQIR5T-SR",
+        "outputId": "404dc989-bcea-4e6e-ed99-f97ca67868c1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor do lado do quadrado em metros: 10\n",
+            "\n",
+            "O valor da área é: 100.00 m\n",
+            "O dobro da área é: 200.00 m\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "MXBdF2g7Y8uQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 8)Elabore um código que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês em uma mensagem amigável.\n",
+        "ganha_hora = float(input(\"Quanto você ganha por hora? \"))\n",
+        "horas_trabalhadas = float(input(\"Quantas horas você trabalhou no mês? \"))\n",
+        "salario = ganha_hora * horas_trabalhadas\n",
+        "print(f\"\\nSeu salário é de R$ {salario:.2f}.\")"
+      ],
+      "metadata": {
+        "id": "8UKJV2Q7T-VA",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cdd2601e-b272-4cd8-b6fa-568e223ed458"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Quanto você ganha por hora? 10\n",
+            "Quantas horas você trabalhou no mês? 176\n",
+            "\n",
+            "Seu salário é de R$ 1760.00.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 9) Elabore um código que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius. ** Onde C = 5 * ((F-32) / 9)**.\n",
+        "fahrenheit = float(input(\"Digite a temperatura em Fahrenheit: \"))\n",
+        "celsius = 5 * ((fahrenheit - 32) / 9)\n",
+        "print(f\"\\nA temperatura em Celsius é {celsius:.2f}°C.\")"
+      ],
+      "metadata": {
+        "id": "Tme2tNGlT-Xh",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "256a109f-23df-4409-c803-5b6a86d04d25"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a temperatura em Fahrenheit: 20\n",
+            "\n",
+            "A temperatura em Celsius é -6.67°C.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 10) Elabore um código que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.\n",
+        "celsius = float(input(\"Digite a temperatura em Celsius: \"))\n",
+        "fahrenheit = (celsius * 9 / 5) + 32\n",
+        "print(f\"\\nA temperatura em Fahrenheit é {fahrenheit}°F.\")"
+      ],
+      "metadata": {
+        "id": "aSxtWXD7T-aI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d9ee3e82-d0de-45d8-ac75-df8913f2eb3d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a temperatura em Celsius: -6.67\n",
+            "\n",
+            "A temperatura em Fahrenheit é 19.994°F.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 11) Elabore um código que peça 2 números inteiros e um número real. Calcule e mostre:\n",
+        "\n",
+        "# o produto do dobro do primeiro com metade do segundo.\n",
+        "num1 = int(input(\"Digite um número inteiro: \"))\n",
+        "num2 = int(input(\"Digite outro número inteiro: \"))\n",
+        "produto = (num1 * 2) * (num2 / 2)\n",
+        "print(f\"\\nO produto do dobro do primeiro com metade do segundo é {produto}.\")"
+      ],
+      "metadata": {
+        "id": "GXjeufShT-dI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bd44e106-eda2-4102-f2e4-c1f770bb71a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 10\n",
+            "Digite outro número inteiro: 10\n",
+            "\n",
+            "O produto do dobro do primeiro com metade do segundo é 100.0.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# a soma do triplo do primeiro com o terceiro.\n",
+        "num1 = int(input(\"Digite um número inteiro: \"))\n",
+        "num3 = float(input(\"Digite um número real: \"))\n",
+        "soma = (num1 * 3) + num3\n",
+        "print(f\"\\nA soma do triplo do primeiro com o terceiro é {soma:.2f}.\")"
+      ],
+      "metadata": {
+        "id": "XRbW1zOK8_XY",
+        "outputId": "64661467-6a51-4c4d-e92b-59c6b516c1c2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 10\n",
+            "Digite um número real: 10\n",
+            "\n",
+            "A soma do triplo do primeiro com o terceiro é 40.0.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# o terceiro elevado ao cubo.\n",
+        "num3 = float(input(\"Digite um número real: \"))\n",
+        "cubo = num3 ** 3\n",
+        "print(f\"\\nO terceiro elevado ao cubo é {cubo:.2f}.\")"
+      ],
+      "metadata": {
+        "id": "B_80za-c9KUy",
+        "outputId": "88035faf-f2b7-4d06-8c2e-552ff9a0028b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número real: 2\n",
+            "\n",
+            "O terceiro elevado ao cubo é 8.00.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " # 12) Elabore um código que receba os dados de entrada a altura de uma pessoa, e informe qual seria o peso ideal, usando a seguinte fórmula: (72.7*altura) - 58"
+      ],
+      "metadata": {
+        "id": "AHWdalU7T-f4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "altura = float(input(\"Digite o valor da sua altura em metros.\"))\n",
+        "peso_ideal = (72.7 * altura) -58\n",
+        "print(f\"O seu peso ideal é: {peso_ideal:.2f} kg\")"
+      ],
+      "metadata": {
+        "id": "l06a3oBVT-i4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "db566d21-244d-410f-fa0f-d930c3c2de17"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor da sua altura em metros.1.75\n",
+            "O seu peso ideal é: 69.23 kg\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
